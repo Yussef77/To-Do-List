@@ -47,7 +47,7 @@ function TaskList() {
     setTasks(updatedTasks);
   };
 
-  const checkStatus = tasks.every((task) => task.completed === true);
+  const checkStatus = tasks.every((task) => task.completed === true) && tasks.length>0;
 
   console.log(checkStatus);
 
